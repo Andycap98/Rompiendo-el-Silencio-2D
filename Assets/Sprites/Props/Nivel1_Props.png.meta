@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 3d6bc5f3b3f2bea4fa1780f278ed9e48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1425668311964166829
+    second: Nivel1_Props_0
+  - first:
+      213: -207697771432120481
+    second: Nivel1_Props_1
+  - first:
+      213: 2232887639706813174
+    second: Nivel1_Props_2
+  - first:
+      213: -1728890360923374457
+    second: Nivel1_Props_3
+  - first:
+      213: 6631111918732439008
+    second: Nivel1_Props_4
+  - first:
+      213: -3493245888002025016
+    second: Nivel1_Props_5
+  - first:
+      213: -467155179821246443
+    second: Nivel1_Props_6
+  - first:
+      213: -1699356522483107770
+    second: Nivel1_Props_7
+  - first:
+      213: 1504471175958026671
+    second: Nivel1_Props_8
+  - first:
+      213: -6496767685896756935
+    second: Nivel1_Props_9
+  - first:
+      213: 4451910075947511546
+    second: Nivel1_Props_10
+  - first:
+      213: -7302002438459655017
+    second: Nivel1_Props_11
+  - first:
+      213: -7574532294242676243
+    second: Nivel1_Props_12
+  - first:
+      213: -3209149975482816674
+    second: Nivel1_Props_13
+  - first:
+      213: -8530177933187476085
+    second: Nivel1_Props_14
+  - first:
+      213: 5107924708911664977
+    second: Nivel1_Props_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nivel1_Props_0
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 714
+        width: 60
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35558d94932073ce0800000000000000
+      internalID: -1425668311964166829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 835
+        width: 280
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fe5213afb1e1df0800000000000000
+      internalID: -207697771432120481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 967
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2c51c5a7fccfe10800000000000000
+      internalID: 2232887639706813174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_3
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 773
+        width: 113
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cb095706fb108e0800000000000000
+      internalID: -1728890360923374457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 17
+        width: 151
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ede7ed2821760c50800000000000000
+      internalID: 6631111918732439008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 542
+        width: 86
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c99b847f5f758fc0800000000000000
+      internalID: -3493245888002025016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 453
+        width: 104
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51855cbc6d45489f0800000000000000
+      internalID: -467155179821246443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_7
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 313
+        width: 70
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648b6a21f3caa68e0800000000000000
+      internalID: -1699356522483107770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 282
+        width: 377
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9dac14094f0e410800000000000000
+      internalID: 1504471175958026671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_9
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 138
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93123e50638d6d5a0800000000000000
+      internalID: -6496767685896756935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 429
+        width: 86
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe65d870ac58cd30800000000000000
+      internalID: 4451910075947511546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_11
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 306
+        width: 90
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c739a48731aaa90800000000000000
+      internalID: -7302002438459655017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_12
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 260
+        width: 92
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1d0fd820bd1e690800000000000000
+      internalID: -7574532294242676243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_13
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 76
+        width: 117
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57a460a91fc673d0800000000000000
+      internalID: -3209149975482816674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_14
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1
+        width: 118
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b851c755d58be9980800000000000000
+      internalID: -8530177933187476085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nivel1_Props_15
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 2
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fce16b57ef2e640800000000000000
+      internalID: 5107924708911664977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Nivel1_Props_0: -1425668311964166829
+      Nivel1_Props_1: -207697771432120481
+      Nivel1_Props_10: 4451910075947511546
+      Nivel1_Props_11: -7302002438459655017
+      Nivel1_Props_12: -7574532294242676243
+      Nivel1_Props_13: -3209149975482816674
+      Nivel1_Props_14: -8530177933187476085
+      Nivel1_Props_15: 5107924708911664977
+      Nivel1_Props_2: 2232887639706813174
+      Nivel1_Props_3: -1728890360923374457
+      Nivel1_Props_4: 6631111918732439008
+      Nivel1_Props_5: -3493245888002025016
+      Nivel1_Props_6: -467155179821246443
+      Nivel1_Props_7: -1699356522483107770
+      Nivel1_Props_8: 1504471175958026671
+      Nivel1_Props_9: -6496767685896756935
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
