@@ -30,7 +30,7 @@ public class DeteccionJugador : MonoBehaviour
         if (alineacion >= limite)
         {
             // restar vidas jugador
-            Debug.Log("Restando vida al jugador: " + (DañoPorSegundo * Time.deltaTime) + " por frame");
+        //    Debug.Log("Restando vida al jugador: " + (DañoPorSegundo * Time.deltaTime) + " por frame");
         }
     }
     Vector2 Direccion()
