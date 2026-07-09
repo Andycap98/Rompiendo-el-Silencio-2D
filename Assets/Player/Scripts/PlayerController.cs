@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
+    public Animator animator;
     private float horizontalInput;
     private float verticalInput;
     private Vector2 direccionMovement;
@@ -20,6 +21,19 @@ public class PlayerController : MonoBehaviour
         direccionMovement = new Vector2(horizontalInput, verticalInput);
         if (direccionMovement.magnitude>1)
                        direccionMovement=direccionMovement.normalized;//normaliza el vector cuando toca la tecla incremente
+
+          animator.SetFloat("movement", direccionMovement.magnitude);
+          animator.SetFloat("horizontal", horizontalInput);
+          animator.SetFloat("Vertical", verticalInput);
+        if (horizontalInput > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (horizontalInput < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+
         PersonajeMovimiento();
     }
 
