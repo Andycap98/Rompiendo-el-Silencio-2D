@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private Vector2 direccionMovement;
+    public int autoestima = 100;
     void Start()
     {
         
@@ -28,6 +29,10 @@ public class PlayerController : MonoBehaviour
       transform.Translate(movimiento, Space.World);
 
 
+    }
+
+    public void  RestarAutoestima() {
+        Debug.Log("Restamos Autoestima al player");
     }
 }
    
