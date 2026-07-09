@@ -45,8 +45,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void  RestarAutoestima() {
-        Debug.Log("Restamos Autoestima al player");
+    public void RestarAutoestima(int cantidad) {
+       
+        autoestima += cantidad;
+        Debug.Log("Restamos Autoestima al player "+autoestima);
     }
 }
    

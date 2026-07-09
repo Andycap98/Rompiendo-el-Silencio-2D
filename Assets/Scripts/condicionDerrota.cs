@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class condicionDerrota : MonoBehaviour
 {
-    [Serialized] private float rangoAcoso = 3.5f;
-    [Serialized] private float danioPorSegundo = 10;
-    [Serialized] private Transform objetivo;
-    [Serialized] private GameObject player;
+    [SerializeField] private float rangoAcoso = 3.5f;
+    [SerializeField] private float danioPorSegundo = 10;
+    [SerializeField] private Transform objetivo;
+    [SerializeField] private GameObject player;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,8 +19,9 @@ public class condicionDerrota : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D colision)
     {
-        if (!colision.CompareTag("Player")) //traspasar
+        if (colision.CompareTag("Player")) //traspasar
         {
+            player.GetComponent<PlayerController>().RestarAutoestima(-1);
         }
     }
 
