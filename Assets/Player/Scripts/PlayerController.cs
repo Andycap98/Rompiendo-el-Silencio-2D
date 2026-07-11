@@ -7,9 +7,10 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private Vector2 direccionMovement;
+    private Rigidbody2D rb;
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // normalizar vector para poder incremetar la velocidad del player en diagonal
