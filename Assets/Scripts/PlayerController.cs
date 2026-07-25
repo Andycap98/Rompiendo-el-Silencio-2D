@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
     private float verticalInput;
     private Vector2 direccionMovement;
 private Rigidbody2D rb;
-public int autoestima = 100;
+public int autoestima = 10;
+    [SerializeField] bool esInmune=false;
+    [SerializeField] float tiempoInmunidad = 2f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -47,9 +49,19 @@ public int autoestima = 100;
     }
 
     public void RestarAutoestima(int cantidad) {
-       
-        autoestima += cantidad;
+        if (esInmune) return;
+        StartCoroutine(Restar(-cantidad));
         Debug.Log("Restamos Autoestima al player "+autoestima);
+    }
+
+    IEnumerator Restar (int RestarAutoestima)
+    {
+        esInmune = true;
+            autoestima -= RestarAutoestima;
+            yield return new WaitForSeconds(tiempoInmunidad);
+        esInmune = false;
+
+        
     }
 }
    

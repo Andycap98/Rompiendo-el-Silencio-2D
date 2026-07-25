@@ -5,23 +5,23 @@ public class condicionDerrota : MonoBehaviour
     [SerializeField] private float rangoAcoso = 3.5f;
     [SerializeField] private float danioPorSegundo = 10;
     [SerializeField] private Transform objetivo;
-    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject jugador;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-     /*GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+      jugador = GameObject.FindGameObjectWithTag("Player");
         if (jugador != null)
         {
             objetivo = jugador.transform;
-        }*/
+        }
     }
 
     private void OnTriggerStay2D(Collider2D colision)
     {
         if (colision.CompareTag("Player")) //traspasar
         {
-            player.GetComponent<PlayerController>().RestarAutoestima(-1);
+            jugador.GetComponent<PlayerController>().RestarAutoestima(-1);
         }
     }
 

@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2206377615768018561}
   - component: {fileID: 8321648312599347009}
   - component: {fileID: 704069415425691912}
+  - component: {fileID: -8875945300687548463}
   m_Layer: 0
   m_Name: Bullies
   m_TagString: Untagged
@@ -158,9 +159,6 @@ MonoBehaviour:
   RangoDeAtaque: 4
   "Da\xF1oPorSegundo": 5
   anguloDeVision: 120
-  prefabInsulto: {fileID: 2544169037696042192, guid: a9067990ab94b4c4b869c1472a875f36, type: 3}
-  puntoDisparo: {fileID: 5574149151225133153}
-  tiempoEntreInsultos: 2
 --- !u!95 &8321648312599347009
 Animator:
   serializedVersion: 7
@@ -190,7 +188,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6367288308580630810}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -213,7 +211,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -229,3 +227,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.6, y: 4.2}
   m_EdgeRadius: 0
+--- !u!114 &-8875945300687548463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6367288308580630810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdc4145351b05147b9cf211d7aaed93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::condicionDerrota
+  rangoAcoso: 3.5
+  danioPorSegundo: 10
+  objetivo: {fileID: 0}
+  jugador: {fileID: 0}
