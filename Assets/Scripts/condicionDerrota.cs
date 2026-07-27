@@ -2,32 +2,34 @@ using UnityEngine;
 
 public class condicionDerrota : MonoBehaviour
 {
-    [SerializeField] private float rangoAcoso = 3.5f;
-    [SerializeField] private float danioPorSegundo = 10;
-    [SerializeField] private Transform objetivo;
-    [SerializeField] private GameObject jugador;
+    private PlayerController jugador;
+    private bool derrota = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-      jugador = GameObject.FindGameObjectWithTag("Player");
-        if (jugador != null)
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null)
         {
-            objetivo = jugador.transform;
+            jugador = player.GetComponent<PlayerController>();
         }
     }
 
-    private void OnTriggerStay2D(Collider2D colision)
+    void Update()
     {
-        if (colision.CompareTag("Player")) //traspasar
+        if (jugador == null || derrota)
+            return;
+
+        if (jugador.autoestima <= 0)
         {
-            jugador.GetComponent<PlayerController>().RestarAutoestima(-1);
+            derrota = true;
+
+            Debug.Log("Derrota");
+
+            // Aquí puedes cargar la escena Game Over
+            // SceneManager.LoadScene("GameOver");
         }
     }
-
-
-
-
 }
 
 
@@ -591,5 +593,3 @@ public class condicionDerrota : MonoBehaviour
 
 
 
-
-   

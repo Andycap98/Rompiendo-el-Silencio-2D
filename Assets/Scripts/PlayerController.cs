@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private Vector2 direccionMovement;
-private Rigidbody2D rb;
-public int autoestima = 10;
-    [SerializeField] bool esInmune=false;
+    private Rigidbody2D rb;
+    public int autoestima = 10;
+    [SerializeField] bool esInmune = false;
     [SerializeField] float tiempoInmunidad = 2f;
     void Start()
     {
@@ -22,12 +22,12 @@ public int autoestima = 10;
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         direccionMovement = new Vector2(horizontalInput, verticalInput);
-        if (direccionMovement.magnitude>1)
-                       direccionMovement=direccionMovement.normalized;//normaliza el vector cuando toca la tecla incremente
+        if (direccionMovement.magnitude > 1)
+            direccionMovement = direccionMovement.normalized;//normaliza el vector cuando toca la tecla incremente
 
-          animator.SetFloat("movement", direccionMovement.magnitude);
-          animator.SetFloat("horizontal", horizontalInput);
-          animator.SetFloat("Vertical", verticalInput);
+        animator.SetFloat("movement", direccionMovement.magnitude);
+        animator.SetFloat("horizontal", horizontalInput);
+        animator.SetFloat("Vertical", verticalInput);
         if (horizontalInput > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -41,27 +41,37 @@ public int autoestima = 10;
     }
 
     void PersonajeMovimiento()
-    { 
-      Vector3 movimiento = new Vector3(direccionMovement.x, direccionMovement.y,0) * speed * Time.deltaTime;
-      transform.Translate(movimiento, Space.World);
+    {
+        Vector3 movimiento = new Vector3(direccionMovement.x, direccionMovement.y, 0) * speed * Time.deltaTime;
+        transform.Translate(movimiento, Space.World);
 
 
     }
 
-    public void RestarAutoestima(int cantidad) {
+    public void RestarAutoestima(int cantidad)
+    {
         if (esInmune) return;
-        StartCoroutine(Restar(-cantidad));
-        Debug.Log("Restamos Autoestima al player "+autoestima);
+        StartCoroutine(Restar(cantidad));
+    }
+    public void AumentarAutoestima(int cantidad)
+    {
+        autoestima += cantidad;
+
+        Debug.Log("Autoestima: " + autoestima);
     }
 
-    IEnumerator Restar (int RestarAutoestima)
+    IEnumerator Restar(int cantidad)
     {
         esInmune = true;
-            autoestima -= RestarAutoestima;
-            yield return new WaitForSeconds(tiempoInmunidad);
-        esInmune = false;
 
-        
+        autoestima -= cantidad;
+
+        Debug.Log("Autoestima restante: " + autoestima);
+
+        yield return new WaitForSeconds(tiempoInmunidad);
+
+        esInmune = false;
     }
+
 }
-   
+
