@@ -7,21 +7,55 @@ public class DeteccionJugador : MonoBehaviour
     public float DañoPorSegundo = 5f;
     public float anguloDeVision = 90f;
 
+    private Animator animator;
+    private MovimientoBullies movimiento;
+
+    public GameObject prefabInsulto;
+    public Transform puntoDisparo;
+
+    public float tiempoEntreInsultos = 2f;
+
+    private float siguienteDisparo;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator = GetComponent<Animator>();
+        movimiento = GetComponent<MovimientoBullies>();
 
+        if (jugador == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            if (player != null)
+                jugador = player.transform;
+        }
+        if (puntoDisparo == null)
+        {
+            puntoDisparo = transform.Find("Punto_Disparo");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (jugador == null) return;// va a hacer q si no tiene transform (NULL) no se ejecuta la part de abajo
+        if (jugador == null)
+        {
+            movimiento.mover = true;
+            animator.SetBool("atacar", false);
+            return;
+        }
 
         Vector2 distanciaEntreBullieyJugador = jugador.position - transform.position;
         float Distancia = distanciaEntreBullieyJugador.magnitude;
 
-        if (Distancia > RangoDeAtaque) return;// si esta fuera del rango de ataque no se ejecuta lo de abajo
+        if (Distancia > RangoDeAtaque)
+        {
+            movimiento.mover = true;
+            animator.SetBool("atacar", false);
+            return;
+        }
 
         Vector2 direccionMirada = Direccion();
         float alineacion = Vector2.Dot(direccionMirada, distanciaEntreBullieyJugador.normalized);
@@ -29,9 +63,17 @@ public class DeteccionJugador : MonoBehaviour
 
         if (alineacion >= limite)
         {
-            // restar vidas jugador
-        //    Debug.Log("Restando vida al jugador: " + (DañoPorSegundo * Time.deltaTime) + " por frame");
+            movimiento.mover = false;
+            animator.SetBool("atacar", true);
+
+            // Aquí puedes restar vida al jugadorDebug.Log("Restando vida al jugador: " + (DañoPorSegundo * Time.deltaTime) + " por frame");
         }
+        else
+        {
+            movimiento.mover = true;
+            animator.SetBool("atacar", false);
+        }
+
     }
     Vector2 Direccion()
     {
@@ -65,5 +107,11 @@ public class DeteccionJugador : MonoBehaviour
         float cos = Mathf.Cos(rad);
         float sin = Mathf.Sin(rad);
         return new Vector2(v.x * cos - v.y * sin, v.x * sin + v.y * cos);
+    }
+    public void LanzarInsulto()
+    {
+        Instantiate(prefabInsulto,
+                    puntoDisparo.position,
+                    Quaternion.identity);
     }
 }
