@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class condicionDerrota : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class condicionDerrota : MonoBehaviour
         if (jugador.autoestima <= 0)
         {
             derrota = true;
+
+            SceneManager.LoadScene("Derrota1");
 
             Debug.Log("Derrota");
 

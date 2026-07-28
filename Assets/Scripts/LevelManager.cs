@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -85,14 +86,14 @@ public class LevelManager : MonoBehaviour
     void WinGame()
     {
         isGameActive = false;
-        if (winPanel != null) winPanel.SetActive(true);
-        Time.timeScale = 0f; // Detiene el juego
+        SceneManager.LoadScene("Victoria2"); 
+        Time.timeScale = 1f; 
     }
 
     void LoseGame()
     {
         isGameActive = false;
-        if (losePanel != null) losePanel.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Derrota2");
     }
 }
