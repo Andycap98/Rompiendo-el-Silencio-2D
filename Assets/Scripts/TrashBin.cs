@@ -2,7 +2,16 @@ using UnityEngine;
 
 public class TrashBin : MonoBehaviour
 {
-    [SerializeField] private LevelManager levelManager;
+    public LevelManager levelManager;
+
+    void Start()
+    {
+        // Si no está asignado desde el Inspector, lo busca en la escena
+        if (levelManager == null)
+        {
+            levelManager = FindObjectOfType<LevelManager>();
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -10,10 +19,13 @@ public class TrashBin : MonoBehaviour
         {
             Debug.Log("¡Basura encestada! Subiendo barra...");
 
-            // Suma punto en el manager
             if (levelManager != null)
             {
                 levelManager.AddPoint();
+            }
+            else
+            {
+                Debug.LogError("¡ATENCIÓN: TrashBin no encuentra el LevelManager!");
             }
 
             Destroy(other.gameObject);
