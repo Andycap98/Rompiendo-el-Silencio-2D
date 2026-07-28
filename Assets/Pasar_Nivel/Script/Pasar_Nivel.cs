@@ -7,7 +7,7 @@ public class Pasar_Nivel : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("VictoriaNivel1");
         }
     }
 }
