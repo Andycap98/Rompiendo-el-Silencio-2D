@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class condicionDerrota : MonoBehaviour
 {
@@ -25,7 +24,7 @@ public class condicionDerrota : MonoBehaviour
         {
             derrota = true;
 
-            SceneManager.LoadScene("DerrotaNivel1");
+            Debug.Log("Derrota");
 
             // Aquí puedes cargar la escena Game Over
             // SceneManager.LoadScene("GameOver");
